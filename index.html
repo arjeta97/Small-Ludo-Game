@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Small Ludo game</title>
+
+</head>
+<body>
+        <div class="container">  
+            <h1 class="title">All you need is love</h1>
+
+            <div class="gameRules">
+                <h2><b>How to play this Game</b></h2>
+                <ul>
+                    <li>&hearts;Roll the hearts and see who gets more hearts.&hearts;</li>
+                    <li>&hearts;The one that gets more hearts wins a point, which in this case is a heart.&hearts;</li>
+                    <li>&hearts;You have to add the points manually.&hearts;</li>
+                    <li>&hearts;You can set the maxiumum of points you want to play, into input.&hearts;</li>
+                    <li>&hearts;The one that gathers the set amount of points frist, wins more love.&hearts;</li>
+                </ul>
+            </div>
+      
+          
+            <div class="dice m-4">
+                <p>Player one</p>
+                <img src="1.jpg"id="d1">
+            </div>
+            <div class="dice m-4">
+                <p>Player two</p>
+                <img src="2.jpg"id="d2">
+            </div>
+            <div>
+                <button onclick="myludo()"type="button" class="btn m-2">Roll the hearts</button> 
+                <h3 id="winner"></h3>
+                <p class="in"><h4>Input the maxiumum hearts you want to play</h4></p>  
+                <input type="number" value="5" class="text-center form-control w-25">
+            </div>
+
+            <div class="point my-4 py-3">
+                <div class="player_1">
+                    <h3>Player 1</h3>
+                    <p class="score_1">0</p>
+                    <button class="btn m-2" id="buttonplus1">+</button>
+                    <button class="btn m-2" id="buttonmin1">-</button>
+                </div>
+
+                <div class="player_2">
+                    <h3>Player 2</h3>
+                    <p class="score_2">0</p>               
+                    <button class="btn m-2" id="buttonplus2">+</button>
+                    <button class="btn m-2" id="buttonmin2">-</button>
+                </div>
+            </div>
+                <p id="winner-display"></p>
+                <button id="new" class="btn m-2 w-75">New Game</button>
+         
+        </div>  
+        <footer>
+            <p>This game is desing by Arjeta</p>
+        </footer>
+    <script src="main.js"></script>
+</body>
